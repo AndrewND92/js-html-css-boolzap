@@ -1,0 +1,10 @@
+.messaggio-utente {
+  background-color: lightgreen;
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+}
+.messaggio-contatto {
+  background-color: white;
+  border-radius: 5px;
+}

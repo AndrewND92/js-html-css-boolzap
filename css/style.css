@@ -25,7 +25,7 @@
   float: left;
   width: 70%;
   height: 70px;
-  background-color: lightgreen;
+  background-color: darkgrey;
 }
 .contatti{
   float: left;
@@ -33,6 +33,7 @@
   /* debug */
   height: 500px;
   background-color: lightgrey;
+  overflow: auto;
 }
 .chat{
   display: flex;
@@ -44,7 +45,18 @@
   background-color: purple;
 }
 .text-chat{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
   width: 100%;
   height: 70px;
   background-color: orange;
+}
+#input-chat{
+  width: 80%;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 15px;
 }
