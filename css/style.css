@@ -27,14 +27,42 @@
   height: 70px;
   background-color: darkgrey;
 }
+
 .contatti{
   float: left;
   width: 30%;
   /* debug */
   height: 500px;
-  background-color:#787878;
+  background-color:lightgrey;
   overflow: auto;
 }
+.ricerca-contatti{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  background-color: darkgrey;
+}
+.ricerca-contatti input{
+  width: 80%;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.contatto{
+  height: 70px;
+  width: 100%;
+  margin: 7px 0;
+}
+.contatto img {
+height: 100%;
+margin-left: 10px;
+vertical-align: middle;
+}
+
 .chat{
   flex-direction: column;
   display: flex;
