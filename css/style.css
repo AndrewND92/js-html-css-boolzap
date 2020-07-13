@@ -45,20 +45,36 @@
   height: 500px;
   background-color: lightgrey;
 }
-.show-chat{
+.show-chat-contatto{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+.show-chat-utente{
   display: flex;
   flex-direction: column;
   align-items:flex-end;
   width: 100%;
   height: 100%;
   background-color: wheat;
+  overflow-x: auto;
 }
-.show-chat span{
-  width: 110px;
-  height: 45px;
-  background-color: lightgreen;
-  padding: 10px;
+.show-chat-utente span{
+  width: auto;
+  height: auto;
+  padding: 15px;
   margin: 15px 10px;
+  border-radius: 5px;
+}
+#my-mex{
+  background-color: lightgreen;
+}
+#contact-mex{
+  background-color: white;
+  align-self: flex-start;
 }
 .text-chat{
   display: flex;
