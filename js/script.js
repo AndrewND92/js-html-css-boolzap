@@ -19,11 +19,22 @@ var key = event.which;
 }
 
 function sendMessage(text) {
-  var template = $("#my-mex").clone();
+  var template = $(".template-my-mex > span").clone();
   var target = $(".show-chat-utente");
 
+  template.append(text);
   target.append(template);
+
+
+  setTimeout(myFunction, 3000);
+
+
+  function myFunction() {
+    console.log("ciao");
+  }
+
 }
+
 
 
 
