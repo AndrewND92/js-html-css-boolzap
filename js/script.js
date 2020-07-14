@@ -8,12 +8,24 @@ function sendKeyup(event) {
 var key = event.which;
 
   if (key==13) {
+
     var input = $("#input-chat");
     var text = input.val();
     input.val("");
-    console.log(text, "testo");
+
+    // console.log(text, "testo");
+    sendMessage(text);
   }
 }
+
+function sendMessage(text) {
+  var template = $("#my-mex").clone();
+  var target = $(".show-chat-utente");
+
+  target.append(template);
+}
+
+
 
 function init() {
 
