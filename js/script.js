@@ -11,6 +11,7 @@ var key = event.which;
 
     var input = $("#input-chat");
     var text = input.val();
+
     input.val("");
 
     // console.log(text, "testo");

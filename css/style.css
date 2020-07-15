@@ -14,18 +14,55 @@
   clear: both;
 }
 
-
+/* RIGA UTENTE SINISTRA */
 .riga-utente-sinistra{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   float: left;
   width: 30%;
   height: 70px;
-  background-color: lightblue;
+  background-color: azure;
 }
+.riga-utente-sinistra img {
+  padding: 5px;
+  height: 100%;
+  margin-left: 10px;
+}
+.riga-utente-sinistra i {
+  margin-right: 15px;
+  font-size: 25px;
+  color: grey;
+}
+
+/* RIGA CONTATTO DESTRA */
 .riga-contatto-destra{
+  display: flex;
   float: left;
   width: 70%;
   height: 70px;
-  background-color: darkgrey;
+  background-color: azure;
+  border-left: 1px solid lightgrey;
+}
+.riga-contatto-destra img {
+  padding: 5px;
+  height: 100%;
+  margin-left: 10px;
+}
+.riga-contatto-destra .dati-accesso {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: grey;
+}
+.icone-contatto-destra{
+  align-self: flex-end;
+}
+.icone-contatto-destra i {
+  margin-right: 15px;
+  font-size: 25px;
+  color: grey;
 }
 
 .contatti{
@@ -36,6 +73,7 @@
   background-color:lightgrey;
   overflow: auto;
 }
+
 .ricerca-contatti{
   display: flex;
   align-items: center;
@@ -44,6 +82,7 @@
   height: 70px;
   background-color: darkgrey;
 }
+
 .ricerca-contatti input{
   width: 80%;
   height: 50px;
@@ -52,20 +91,24 @@
   font-size: 15px;
   font-weight: bold;
 }
+
 .contatto{
   height: 70px;
   width: 100%;
   margin: 7px 0;
 }
+
 .contatto img {
 height: 100%;
 margin-left: 10px;
 vertical-align: middle;
 }
 
+
+/* parte della chat */
 .chat{
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   align-items: flex-end;
   float: left;
   width: 70%;
@@ -73,23 +116,17 @@ vertical-align: middle;
   height: 500px;
   background-color: lightgrey;
 }
-.show-chat-contatto{
-  display: flex;
-  flex-direction: column;
-  align-items:flex-end;
-  width: 100%;
-  height: 100%;
-  background-color: red;
-}
+
 .show-chat-utente{
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items:flex-end;
+  align-items:flex-end; */
   width: 100%;
   height: 100%;
   background-color: wheat;
   overflow-x: auto;
 }
+
 .show-chat-utente span{
   width: auto;
   height: auto;
@@ -97,14 +134,28 @@ vertical-align: middle;
   margin: 15px 10px;
   border-radius: 5px;
 }
-#my-mex{
-  background-color: lightgreen;
+
+/* .template-contact-mex{
+  float: left;
+  width: 50%;
+  height: 100%;
 }
-#contact-mex{
+
+.template-my-mex{
+  float: left;
+  width: 50%;
+  height: 100%;
+} */
+
+
+.contact-mex {
   background-color: white;
   align-self: flex-start;
 }
-.text-chat{
+
+
+/* parte dell'input */
+.text-chat {
   display: flex;
   align-items: center;
   align-content: center;
@@ -113,7 +164,8 @@ vertical-align: middle;
   height: 70px;
   background-color: orange;
 }
-#input-chat{
+
+#input-chat {
   width: 80%;
   height: 50px;
   border: 1px solid white;
