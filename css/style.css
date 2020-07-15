@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .contenitore{
-  width: 90%;
+  width: 80%;
   height: 100%;
   margin: 0 auto;
 }
@@ -39,6 +39,7 @@
 .riga-contatto-destra{
   display: flex;
   float: left;
+  justify-content: space-between;
   width: 70%;
   height: 70px;
   background-color: azure;
@@ -49,22 +50,26 @@
   height: 100%;
   margin-left: 10px;
 }
-.riga-contatto-destra .dati-accesso {
-  margin-left: 10px;
+.dati-accesso {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   color: grey;
 }
-.icone-contatto-destra{
-  align-self: flex-end;
+.icone-contatto-destra {
+  display: flex;
+  align-items: center;
 }
 .icone-contatto-destra i {
   margin-right: 15px;
   font-size: 25px;
   color: grey;
 }
+.span-contatto-destra{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+/* CONTATTI DELLA RUBRICA */
 .contatti{
   float: left;
   width: 30%;
@@ -73,7 +78,22 @@
   background-color:lightgrey;
   overflow: auto;
 }
+.notifiche{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: skyblue;
+}
+.notifiche i {
+  margin-left: 10px;
+  font-size: 25px;
+  color: skyblue;
+  background-color: azure;
+  padding: 10px;
+  border-radius: 50%;
 
+}
 .ricerca-contatti{
   display: flex;
   align-items: center;
